@@ -1,0 +1,107 @@
+html {
+  font-family: Dual;
+  font-size: 10vw;
+  text-transform: uppercase;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --left: 25%;
+  --right: 75%;
+}
+
+.letter,
+[class^="shift"] {
+  display: inline-block;
+}
+
+.o1,
+.o2,
+.tne,
+.rw {
+  position: fixed;
+  top: 50%;
+}
+.o1,
+.o2 {
+  transform: translate3d(-50%, -50%, 0);
+  margin-top: 1.1vw;
+  margin-left: 0.1vw;
+}
+.tne {
+  transform: translate3d(-50%, -50%, 0);
+}
+.rw {
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.o1 {
+  left: var(--left);
+}
+
+.o2,
+.rw {
+  left: var(--right);
+}
+
+.tne {
+  left: var(--left);
+}
+
+.t,
+.n,
+.e,
+.r,
+.w {
+  transform: rotate(45deg);
+  transform-origin: 50% 50%;
+}
+
+.shift-t {
+  transform: translateX(1.2vw);
+}
+
+.shift-n {
+  transform: translateX(7.25vw);
+}
+
+.shift-e {
+  transform: translateX(4.15vw);
+}
+
+.shift-r {
+  transform: translateX(-1.7vw);
+}
+
+.shift-w {
+  transform: translateX(2vw);
+}
+
+@keyframes its-a-record {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  display: inline-block;
+  animation: its-a-record 10s linear infinite;
+}
