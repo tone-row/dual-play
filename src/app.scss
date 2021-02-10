@@ -111,10 +111,6 @@ body {
   transform: translateX(2vw);
 }
 
-body > * {
-  mix-blend-mode: screen;
-}
-
 .spin {
   display: inline-block;
   animation: var(--animationName) calc(1s * var(--animationSpeed))
