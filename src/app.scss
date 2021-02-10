@@ -111,6 +111,41 @@ body {
   transform: translateX(2vw);
 }
 
+body > * {
+  mix-blend-mode: screen;
+}
+
+.spin {
+  display: inline-block;
+  animation: var(--animationName) calc(1s * var(--animationSpeed))
+    var(--animationEasing) infinite;
+}
+
+.tne .spin {
+  transform: rotate(calc(var(--tneSpin) * 1deg));
+}
+
+.rw .spin {
+  transform: rotate(calc(var(--rwSpin) * 1deg));
+  animation: var(--animationName) calc(1s * var(--animationSpeed))
+    var(--animationEasing)
+    calc(var(--rwAnimationDelay) * 1s * var(--animationSpeed)) infinite;
+}
+
+#button-wrapper {
+  font-size: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  line-height: auto;
+  button {
+    font-size: 1em;
+    padding: 5px 15px 3px;
+    line-height: auto;
+  }
+}
+
 @keyframes its-a-record {
   from {
     transform: rotate(0deg);
@@ -118,17 +153,4 @@ body {
   to {
     transform: rotate(360deg);
   }
-}
-
-.spin {
-  display: inline-block;
-  animation: its-a-record 8s ease-in-out infinite;
-}
-
-body > * {
-  mix-blend-mode: screen;
-}
-
-.rw .spin {
-  animation: its-a-record 8s ease-in-out 4s infinite;
 }
