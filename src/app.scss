@@ -9,6 +9,10 @@ body {
   height: 100%;
 }
 
+body {
+  background-color: var(--backgroundColor);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,8 +25,8 @@ body {
 }
 
 :root {
-  --left: 25%;
-  --right: 75%;
+  --left: calc(50% - (1% * var(--distance) / 2));
+  --right: calc(50% + (1% * var(--distance) / 2));
 }
 
 .letter,
@@ -61,6 +65,16 @@ body {
 
 .tne {
   left: var(--left);
+}
+
+.tne,
+.o1 {
+  color: var(--leftColor);
+}
+
+.rw,
+.o2 {
+  color: var(--rightColor);
 }
 
 .t,
@@ -103,5 +117,13 @@ body {
 
 .spin {
   display: inline-block;
-  animation: its-a-record 10s linear infinite;
+  animation: its-a-record 8s ease-in-out infinite;
+}
+
+body > * {
+  mix-blend-mode: screen;
+}
+
+.rw .spin {
+  animation: its-a-record 8s ease-in-out 4s infinite;
 }
