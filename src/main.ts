@@ -3,7 +3,7 @@ import { setup, register } from "playgoer";
 setup({
   projectId: "dual-play",
   editable: true,
-  connectionString: "b9cb186c84385b1b46629cb373bffb7a",
+  connectionString: "dfcbbd3b18cdb9f5f9a4bbd75c33b536",
   data: {
     Design: {
       backgroundColor: "#000000",
