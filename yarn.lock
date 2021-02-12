@@ -4588,10 +4588,10 @@ picomatch@^2.0.4, picomatch@^2.0.5, picomatch@^2.2.1:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.2.2.tgz#21f333e9b6b8eaff02468f5146ea406d345f4dad"
   integrity sha512-q0M/9eZHzmr0AulXyPwNfZjtwZ/RBZlbN3K3CErVrk50T2ASYI7Bye0EvekFY3IP1Nt2DHu0re+V2ZHIpMkuWg==
 
-playgoer@^0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/playgoer/-/playgoer-0.1.10.tgz#c4611c01fba05ace0f0e915ffe0905243f5e3341"
-  integrity sha512-N+kwpOfOkOwxwJznnlGoNVfa74nC+kNk8VEOy/qfKOMieIjqD9nqN2SCH6E+1GjI0e6WiG53Vw7AvfNaQGf9HQ==
+playgoer@^2.1.10:
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/playgoer/-/playgoer-0.1.12.tgz#f67b1e2f7312c91710ffdf1b18a2f393b7fa58b3"
+  integrity sha512-Ink7BZ/NUrhhKh1M4cu1p7eZgJFEHBQd68mqkZ7dLNlMfS1+Hg24r+81iGSZQHqztGvp+TQqEHVQXN5nTi5kgQ==
 
 pn@^1.1.0:
   version "1.1.0"
